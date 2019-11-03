@@ -45,8 +45,6 @@ namespace DivvyExercise.Logic
                 _logger.LogError(e.StackTrace);
                 throw;
             }
-            _logger.LogInformation("Hello World!!");
-            await Task.CompletedTask;
         }
 
         private async Task ProcessMessageAsync(SQSEvent.SQSMessage message)
